@@ -1,12 +1,18 @@
-import { readFile } from 'fs';
+import { Converter } from 'showdown';
+import { readFile, readdir } from './io';
 
-const rfPromise = (file: string) => new Promise((res, rej) => {
-  readFile(file, 'utf8', (err, data) => err ? rej(err) : res(data));
-});
+
+
+// const getExample = async () => {
+//   const c = new Converter();
+//   readFile('examples/example-1.md')
+//     .map(c.makeHtml.bind(c))
+//     .fork(console.error, console.log)
+// };
 
 const getExample = async () => {
-  const foo = await rfPromise('examples/example-1.md')
-  console.log(foo);
+  readdir('examples')
+    .fork(console.error, console.log);
 };
 
 const run = async () => {
