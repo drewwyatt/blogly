@@ -1,6 +1,4 @@
-import { Converter } from 'showdown';
-import { readFile, readdir } from './io';
-
+import * as yargs from 'yargs';
 
 
 // const getExample = async () => {
@@ -10,13 +8,23 @@ import { readFile, readdir } from './io';
 //     .fork(console.error, console.log)
 // };
 
-const getExample = async () => {
-  readdir('examples')
-    .fork(console.error, console.log);
-};
+// const getExample = async () => {
+//   readdir('examples')
+//     .fork(console.error, console.log);
+// };
 
-const run = async () => {
-  getExample();
-}
+// const run = async () => {
+//   getExample();
+// }
 
-run();
+// run();
+
+yargs
+  .usage('$0 <cmd> [args]')
+  .command(
+    'build [directory]', 'generate blog from directory of markdown files',
+    y => y.positional('directory', { type: 'string', default: 'posts', describe: 'path to directory containing markdown files' }),
+    argv => console.log(`building... ${argv.directory}`),
+  )
+  .help()
+  .argv;
