@@ -7,6 +7,11 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.18.tgz#1d3ca764718915584fcd9f6344621b7672665c67"
   integrity sha512-fh+pAqt4xRzPfqA6eh3Z2y6fyZavRIumvjhaCL753+TVkGKGhpPeyrJG2JftD0T9q4GF00KjefsQ+PQNDdWQaQ==
 
+"@types/sanctuary@^0.14.2":
+  version "0.14.2"
+  resolved "https://registry.yarnpkg.com/@types/sanctuary/-/sanctuary-0.14.2.tgz#115ee27fd40ba2eee31e81592bc799d33ecbca7d"
+  integrity sha512-FvgVY2yXGAYj5PqfVxND7deTAYymj8rnImfo/LClB/1dILpjhiCA4WRFGq1B4wUxvYzYmVWio2rLN/CL4uBEgQ==
+
 "@types/showdown@^1.9.0":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@types/showdown/-/showdown-1.9.0.tgz#067b2971ad187616a8bebdc8ef8c09dbc2b6306a"

@@ -7,12 +7,13 @@
     "build": "tsc"
   },
   "devDependencies": {
+    "@types/node": "^10.12.18",
+    "@types/sanctuary": "^0.14.2",
+    "@types/showdown": "^1.9.0",
     "@types/yargs": "^12.0.5",
     "ts-node": "^7.0.1"
   },
   "dependencies": {
-    "@types/node": "^10.12.18",
-    "@types/showdown": "^1.9.0",
     "fluture": "^10.3.0",
     "sanctuary": "^0.15.0",
     "showdown": "^1.9.0",
